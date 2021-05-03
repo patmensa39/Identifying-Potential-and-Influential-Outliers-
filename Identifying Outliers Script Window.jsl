@@ -1,0 +1,15 @@
+
+Fit Model(
+	Y( :MFI ),
+	Effects( :SA, :M%, :Xf, :pH, :Viscosity, :Ambient Temp ),
+	Personality( "Standard Least Squares" ),
+	Emphasis( "Effect Leverage" ),
+	Run(
+		:MFI << {Summary of Fit( 1 ), Analysis of Variance( 1 ),
+		Parameter Estimates( 1 ), Lack of Fit( 0 ), Scaled Estimates( 0 ),
+		Plot Actual by Predicted( 1 ), Plot Regression( 0 ),
+		Plot Residual by Predicted( 1 ), Plot Studentized Residuals( 1 ),
+		Plot Effect Leverage( 1 ), Plot Residual by Normal Quantiles( 0 ),
+		Box Cox Y Transformation( 0 )}
+	)
+);
